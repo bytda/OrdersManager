@@ -1,0 +1,51 @@
+﻿<Properties StartupConfiguration="{C41229CC-CED2-4F5B-8BB5-47B9C6A3EDD4}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="RazorPages/Pages/Shared/_Layout.cshtml">
+    <Files>
+      <File FileName="RazorPages/Program.cs" Line="15" Column="1" />
+      <File FileName="RazorPages/Data/RazorPagesMovieContext.cs" Line="21" Column="1" />
+      <File FileName="RazorPages/Pages/Movies/Create.cshtml" Line="2" Column="31" />
+      <File FileName="RazorPages/Pages/Movies/Create.cshtml.cs" Line="26" Column="10" />
+      <File FileName="RazorPages/Pages/Movies/Delete.cshtml.cs" Line="54" Column="51" />
+      <File FileName="RazorPages/Pages/Index.cshtml" Line="12" Column="1" />
+      <File FileName="RazorPages/Pages/Movies/Index.cshtml" Line="10" Column="16" />
+      <File FileName="RazorPages/Pages/Shared/_Layout.cshtml" Line="40" Column="32" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="RazorPages" expanded="True">
+            <Node name="RazorPages" expanded="True">
+              <Node name="Data" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="Movies" expanded="True">
+                  <Node name="Create.cshtml" expanded="True" />
+                  <Node name="Delete.cshtml" expanded="True" />
+                  <Node name="Details.cshtml" expanded="True" />
+                  <Node name="Edit.cshtml" expanded="True" />
+                  <Node name="Index.cshtml" expanded="True" />
+                </Node>
+                <Node name="Shared" expanded="True" />
+              </Node>
+              <Node name="SeedData" expanded="True" />
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+                <Node name="js" expanded="True" />
+              </Node>
+              <Node name="appsettings.json" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.RazorPages PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>

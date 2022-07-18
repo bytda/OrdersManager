@@ -1,0 +1,86 @@
+@page  
+@model RazorPages.Pages.Movies.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Список заказов</h1>
+
+<p><button><h5>
+    <a style="text-decoration:none" asp-page="Create">Оформить заказ</a>
+</h5>
+</button>
+</p>
+<form>
+    <p>
+        
+        Город отправки: <input type="text" asp-for="SearchString" />
+        <input type="submit" value="Filter"  />
+    </p>
+</form>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Order[0].ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Order[0].StartCity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Order[0].StartAdress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Order[0].FinishCity)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.Order[0].FinishAdress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Order[0].Weight)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Order[0].Date)
+            </th>
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Order)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StartCity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StartAdress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FinishCity)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.FinishAdress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Weight)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.ID">Изменить</a> |
+                <a asp-page="./Details" asp-route-id="@item.ID">Детали</a> |
+                <a asp-page="./Delete" asp-route-id="@item.ID">Удалить</a>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
